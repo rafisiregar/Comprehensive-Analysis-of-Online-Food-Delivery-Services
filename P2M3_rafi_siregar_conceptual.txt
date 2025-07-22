@@ -1,0 +1,41 @@
+1. NoSQL
+NoSQL merupakan jenis databse yang tidak menggunakan struktur tabel seperti RDBMS, melainkan memiliki sebuah struktur data dictionary. NoSQL cocok digunakan pada data tidak terstruktur atau semi-terstruktur, dengan fleksibilitas tinggi dalam pengolahan data besar dan skalabilitas horizontal.
+
+2. Kapan menggunakan NoSQL dan RDBMS?
+- NoSQL digunakan untuk data tidak terstruktur, memiliki skalabilitas tinggi, dan data yang sering berubah.
+- RDBMS digunakan untuk data terstruktur dan hubungan antar tabel yang kuat pada setiao transaksi data.
+- NoSQL umumnya digunakan pada sebuah sistem yang secara kontinu mengharuskan pengelolaan data dalam jumlah besar seperti sosial media atau plaform layanan digital. 
+- RDBMS umumnya digunakan dalam sebuah sistem yang memerlukan struktur dan pendefinisian yang jelas, dengan integritas dan laporan data yang lebih ketat seperti sistem perbankan.
+
+3. Contoh Tools/Platforms NoSQL selain ElasticSearch
+- MongoDB: Database berbasis dokumen dengan skalabilitas horizontal dan query fleksibel, cocok digunakan untuk aplikasi berbasis web dan API development.
+- Apache Cassandra: Database kolom dengan skalabilitas tinggi dan replikasi untuk ketahanan, cocok digunakan untuk Iot dan social media.
+- Amazon DynamoDB: Database dengan performa tinggi dan skalabilitas tinggi, cocok digunakan pada aplikasi mobile, IoT, dan online game.
+- Oracle NoSQL: Database dengan pengelolaan data besar yang umum ditemukan pada aplikasi e-commerce dan IoT, yang mana merupakan aplikasi untuk memproses data real-time.
+- Redis: Daabase dengan kecepatan tinggi pada cache yang dapat mengelola session agar proses queuing dapat dilaksanakan secara cepat, cocok digunakan untuk penyimpanan dan proses komputasi AI.
+
+
+4. Apache Airflow
+Airflow adalah platform open-source untuk mengatur, menjadwalkan, dan memonitor alur kerja otomatis. Berguna untuk pipeline ETL dan pekerjaan analisis kompleks.
+
+5. Great Expectations
+Great Expectation merupakan sebuah framework open-source yang digunakan untuk memvalidasi, mendokumentasi, dan memelihara kualitas data. Berikut komponen dari Great Expectations:
+Expectation: Pernyataan yang dapat diverifikasi tentang data.
+
+- Data Context: Titik masuk utama untuk penerapan GX, berisi konfigurasi dan metode untuk komponen terkait seperti "Datasource", "Expectations", "Profilers", dan "Checkpoints".
+- Data Docs: Dokumentasi yang dihasilkan dari metadata GX, berisi file seperti “Expectations” dan “Validation Results”, mudah dibaca untuk mendetailkan komponen.
+- Datasource: API standar untuk mengakses dan berinteraksi dengan data dari berbagai sistem sumber.
+- Validator: Objek yang menjalankan "Expectation Suite" untuk memvalidasi data.
+- Checkpoint: Cara utama untuk memverifikasi data dalam penerapan produksi GX.
+- Expectation Suite: Kumpulan pernyataan yang dapat diverifikasi tentang data.
+
+6. Batch Processing
+Batch processing adalah pemrosesan data dalam kelompok besar pada waktu tertentu, yang digunakan untuk tugas periodik dengan volume tinggi secara berkala. Aplikasi batch processing pada dunia nyata seperti pemrosesan transaksi atau analisis data log. Contoh aplikasi atau enviroment yang umum digunakan antara lain Apache Hadoop dan Apache Spark.
+
+
+References:
+1. Introduction to NoSQL Databases = https://medium.com/@mark.rethana/introduction-to-nosql-databases-c5b43f3ca1cc
+2. Relational vs NoSQL = https://www.datastax.com/blog/relational-vs-nosql-when-should-I-use-one-over-the-other
+3. Top 10 Popular NoSQL = https://reliasoftware.com/blog/popular-nosql-databases
+4. Great Expectations for data Quality and Reliability = https://medium.com/@elifsinem.aktas/great-expectations-for-data-quality-and-reliability-e9f4c1ee20a5
+5. Batch Processing = https://aws.amazon.com/id/what-is/batch-processing/

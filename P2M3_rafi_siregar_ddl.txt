@@ -1,0 +1,24 @@
+DROP TABLE IF EXISTS table_m3 CASCADE;
+
+CREATE TABLE table_m3 (
+    "Age" INTEGER, 
+    "Gender" VARCHAR(50), 
+    "Marital Status" VARCHAR(50), 
+    "Occupation" VARCHAR(50),
+    "Monthly Income" VARCHAR(50),
+    "Educational Qualifications" VARCHAR(50), 
+    "Family size" INTEGER, 
+    "latitude" FLOAT, 
+    "longitude" FLOAT,
+    "Pin code" VARCHAR(10), 
+    "Output" VARCHAR(10), 
+    "Feedback" VARCHAR
+);
+
+COPY table_m3("Age", "Gender", "Marital Status", "Occupation", "Monthly Income", 
+              "Educational Qualifications", "Family size", "latitude", "longitude", 
+              "Pin code", "Output", "Feedback")
+FROM '/tmp/P2M3_rafi_siregar_data_raw.csv'
+DELIMITER ',' CSV HEADER;
+
+SELECT * FROM table_m3;
